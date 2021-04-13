@@ -1,0 +1,275 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/* navigation bar= uper wala hisa website ka */
+/* navigation bar ke liye */
+
+#navbar{
+    
+    display: flex;
+    align-items: center;
+     position: absolute; /*bahut jaruri line jise image navbar tak paucha jaye */
+
+}
+
+/* navigation bar: ka Logo and image */
+#logo{
+    margin: 10px,5px;
+}
+#logo img{
+     height: 80px; /*logo ke size ke liye */
+    margin: 10px,5px;
+}
+
+/* navigation bar: ka List Styling ,yani home contact ko sidhi line mai lana */
+#navbar ul{
+     display: flex; /*home ko sidha kar diya */
+    padding: 20px;
+   
+   
+
+
+}
+#navbar ul li{
+   
+     list-style: none; /*navbar jaha home,service likha hai waha ka bidu hatane ke liye */
+   font-size: 1.1rem;
+}
+
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 15px;
+    border-radius: 20px;
+     text-decoration: none; /*home ,service ke neche ke line hatne ke liye */
+    
+
+}
+
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+    
+    
+
+}
+
+/* navigation bar ,yani upper wala hisa website ka */
+#navbar::before{
+ content: "";
+ background-color: black;
+ position: absolute;
+ height: -100%;
+ width: 100%;
+ top: 0px;
+ left: 0px;
+z-index: -1; /*black hise ke uper purana contain */
+opacity: .4; /*black color ko dim karega */
+}
+  /* navbar ke thik neche ka section "welcome to my" */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 498px;;  /*"welcome to my online.." ki height */
+    justify-content: center;
+     align-items: center; /*"welcome to my online.." ko mid mai le ayega */
+
+}
+
+#home::before{
+
+    content: "";
+ background:url('../bg.jpg') no-repeat center center/cover ;  /*navbar and theek uske neche ki background photo dala and no reptaion of image */
+ position: absolute;
+ height: 71%;
+ width: 100%;
+ top: 0px;
+ left: 0px;
+z-index: -1; /*black hise ke uper purana contain */
+opacity: .89; 
+
+}
+
+/*"welcome to my online.." ke Liye customization */
+
+#home h1{
+    color: white;
+    text-align: center;
+    font-family: 'Zilla Slab Highlight', cursive;
+}
+#home p{
+    color: white;
+    text-align: center;
+    font-family:  'Baloo 2', cursive;
+}
+
+/* Utility class */
+.centre{
+    text-align: center;
+}
+
+.h-primary{
+    font-size: 1.9rem; /*welcome ka size */
+    padding: 12px;
+    font-family:  'Baloo 2', cursive;
+    color: rgb(28, 180, 250);
+
+}
+.h-secodary{
+    font-size: 2.3rem; /*welcome ka size */
+    padding: 12px;
+    font-family:  'Baloo 2', cursive;
+
+}
+
+/* Order wala button ki styling */
+#btn{
+    padding: 6px 5px;
+    border: 2px solid white;
+    background-color: darkorange;
+    border-radius: 9px;
+    margin: 12px;
+    font-size: .9rem;
+     cursor: pointer;  /*hand or hath baan jaye ga */
+   
+}
+#btn:hover{
+    
+    color: rgb(250, 250, 250);
+    background-color: rgb(255, 10, 51);
+    
+}
+
+/* Services section  */
+
+#service{
+    margin: 38px;
+    display: flex;
+    text-align: center;
+   
+    
+
+}
+#service .box{
+    border: 3px solid rgb(255, 0, 0);
+    margin: 3px 6px;
+    border-radius: 25px;
+    background-color: rgb(225, 247, 247);
+    
+}
+#service .box img
+{
+    height: 100px;
+    margin: auto;
+    display: block;
+    
+}
+#service .box p{
+
+    font-size: 1.4rem;
+    font-family: 'Dancing Script', cursive;
+
+}
+
+/* Client section apple ,microsoft , apple*/
+#client-section{
+    position: relative; /* image ko jitna space ki jaruart */
+    height: 350px;
+
+}
+
+/* our cilent ke niche ka background(microsoft,apple,hp ka background) */
+
+#client-section::before{
+    content: "";
+    position: absolute;
+    background: url("../Bg1.jpg");
+    height: 83%;
+    width: 100%;
+    z-index: -1;
+    opacity: 1.1;
+
+    
+}
+
+#clients{
+    /* micrsoft,apple ,google sare logo ka size ,position */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#clients img{
+     /*indivual, micrsoft,apple ,google sare logo ka size ,position */
+    height: 125px;
+    ;
+}
+.client-item{
+    
+    padding: 40px; /* micrsoft,apple ,google logo ke bich space diya */
+
+
+}
+
+
+/* contact Section */
+#contact{
+    position: relative;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 1.5;
+    background: url("../1.png") no-repeat center center/cover;
+}
+
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 15px;
+    font-size: 1.2rem;
+}
+
+#contact-box{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+#contact-box form{
+    width: 40%;
+}
+
+/* contact ka name ,e-mail,message ki handing ki styling and color */
+
+#contact-box label{
+    font-size: 1.8rem;
+    color: rgb(32, 32, 32);
+    font-family:  'Baloo 2', cursive;
+
+
+
+}
+
+
+
+
+
+
+
+/* footor ki styling, matlb website ka sabse neeche ka hisa */
+footer{
+    /* copyright ki styling */
+
+    background: black;
+    color: white;
+    padding: 9px 20px;
+}
