@@ -6,29 +6,29 @@ html{
     scroll-behavior: smooth;
 }
 
-/* navigation bar= uper wala hisa website ka */
-/* navigation bar ke liye */
+/* navigation bar= upper part of website  */
+/* for navigation bar */
 
 #navbar{
     
     display: flex;
     align-items: center;
-     position: absolute; /*bahut jaruri line jise image navbar tak paucha jaye */
+     position: absolute; /*to reach image to navbar  */
 
 }
 
-/* navigation bar: ka Logo and image */
+/* navigation bar:  Logo and image */
 #logo{
     margin: 10px,5px;
 }
 #logo img{
-     height: 80px; /*logo ke size ke liye */
+     height: 80px; /* for logo size */
     margin: 10px,5px;
 }
 
-/* navigation bar: ka List Styling ,yani home contact ko sidhi line mai lana */
+/* navigation bar: home, contact shifted into straight */
 #navbar ul{
-     display: flex; /*home ko sidha kar diya */
+     display: flex; /*to straight the home  */
     padding: 20px;
    
    
@@ -37,7 +37,7 @@ html{
 }
 #navbar ul li{
    
-     list-style: none; /*navbar jaha home,service likha hai waha ka bidu hatane ke liye */
+     list-style: none; /* where navbar  home,service are written ,to remove the point */
    font-size: 1.1rem;
 }
 
@@ -46,7 +46,7 @@ html{
     display: block;
     padding: 15px;
     border-radius: 20px;
-     text-decoration: none; /*home ,service ke neche ke line hatne ke liye */
+     text-decoration: none; /* to remove home ,service's below lines  */
     
 
 }
@@ -59,7 +59,7 @@ html{
 
 }
 
-/* navigation bar ,yani upper wala hisa website ka */
+/* navigation bar ,upper part of website */
 #navbar::before{
  content: "";
  background-color: black;
@@ -68,35 +68,35 @@ html{
  width: 100%;
  top: 0px;
  left: 0px;
-z-index: -1; /*black hise ke uper purana contain */
-opacity: .4; /*black color ko dim karega */
+z-index: -1; /*black part's upper old contain */
+opacity: .4; /* to dim the black colour */
 }
-  /* navbar ke thik neche ka section "welcome to my" */
+  /* Just below part of navbar  "welcome to my" */
 #home{
     display: flex;
     flex-direction: column;
     padding: 3px 200px;
-    height: 498px;;  /*"welcome to my online.." ki height */
+    height: 498px;;  /*"welcome to my online.."  height */
     justify-content: center;
-     align-items: center; /*"welcome to my online.." ko mid mai le ayega */
+     align-items: center; /*"welcome to my online.." to arrange in mid */
 
 }
 
 #home::before{
 
     content: "";
- background:url('../bg.jpg') no-repeat center center/cover ;  /*navbar and theek uske neche ki background photo dala and no reptaion of image */
+ background:url('../bg.jpg') no-repeat center center/cover ;  /*navbar and just below photos of navbar, no reptaion of image */
  position: absolute;
  height: 71%;
  width: 100%;
  top: 0px;
  left: 0px;
-z-index: -1; /*black hise ke uper purana contain */
+z-index: -1; /*for upper part of black part */
 opacity: .89; 
 
 }
 
-/*"welcome to my online.." ke Liye customization */
+/*"welcome to my online.." for customization */
 
 #home h1{
     color: white;
@@ -115,20 +115,20 @@ opacity: .89;
 }
 
 .h-primary{
-    font-size: 1.9rem; /*welcome ka size */
+    font-size: 1.9rem; /*welcome;s size */
     padding: 12px;
     font-family:  'Baloo 2', cursive;
     color: rgb(28, 180, 250);
 
 }
 .h-secodary{
-    font-size: 2.3rem; /*welcome ka size */
+    font-size: 2.3rem; /*welcome's size */
     padding: 12px;
     font-family:  'Baloo 2', cursive;
 
 }
 
-/* Order wala button ki styling */
+/* styling of order button */
 #btn{
     padding: 6px 5px;
     border: 2px solid white;
@@ -136,7 +136,7 @@ opacity: .89;
     border-radius: 9px;
     margin: 12px;
     font-size: .9rem;
-     cursor: pointer;  /*hand or hath baan jaye ga */
+     cursor: pointer;  /* to create hand */
    
 }
 #btn:hover{
@@ -177,14 +177,14 @@ opacity: .89;
 
 }
 
-/* Client section apple ,microsoft , apple*/
+/* Client section apple ,microsoft , google*/
 #client-section{
-    position: relative; /* image ko jitna space ki jaruart */
+    position: relative; /* Required space for image */
     height: 350px;
 
 }
 
-/* our cilent ke niche ka background(microsoft,apple,hp ka background) */
+/* our cilent's below background(microsoft,apple,hp  backgrounds) */
 
 #client-section::before{
     content: "";
@@ -199,19 +199,19 @@ opacity: .89;
 }
 
 #clients{
-    /* micrsoft,apple ,google sare logo ka size ,position */
+    /* microsoft,apple ,google All logo's size and position */
     display: flex;
     justify-content: center;
     align-items: center;
 }
 #clients img{
-     /*indivual, micrsoft,apple ,google sare logo ka size ,position */
+    /* microsoft,apple ,google All logo's size and position */
     height: 125px;
     ;
 }
 .client-item{
     
-    padding: 40px; /* micrsoft,apple ,google logo ke bich space diya */
+    padding: 40px; /* middle space of micrsoft,apple ,google  */
 
 
 }
@@ -248,7 +248,7 @@ opacity: .89;
     width: 40%;
 }
 
-/* contact ka name ,e-mail,message ki handing ki styling and color */
+/* contact's name ,e-mail,message: styling of handing and coloring */
 
 #contact-box label{
     font-size: 1.8rem;
@@ -265,9 +265,9 @@ opacity: .89;
 
 
 
-/* footor ki styling, matlb website ka sabse neeche ka hisa */
+/* Styling of footor, below part of website */
 footer{
-    /* copyright ki styling */
+    /* Styling of copyright  */
 
     background: black;
     color: white;
